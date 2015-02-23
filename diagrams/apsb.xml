@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><entities>
+	<entity>
+		<entity-name>com.skripsi.apsb.entity.User</entity-name>
+		<entity-width>120</entity-width>
+		<entity-height>143</entity-height>
+		<entity-X-Coordinate>28</entity-X-Coordinate>
+		<entity-Y-Coordinate>264</entity-Y-Coordinate>
+		<primary-collapsed>false</primary-collapsed>
+		<relation-collapsed>false</relation-collapsed>
+		<basic-collapsed>true</basic-collapsed>
+	</entity>
+
+	<entity>
+		<entity-name>com.skripsi.apsb.entity.News</entity-name>
+		<entity-width>120</entity-width>
+		<entity-height>103</entity-height>
+		<entity-X-Coordinate>371</entity-X-Coordinate>
+		<entity-Y-Coordinate>218</entity-Y-Coordinate>
+		<primary-collapsed>false</primary-collapsed>
+		<relation-collapsed>false</relation-collapsed>
+		<basic-collapsed>true</basic-collapsed>
+	</entity>
+
+	<entity>
+		<entity-name>com.skripsi.apsb.entity.BobotSpk</entity-name>
+		<entity-width>120</entity-width>
+		<entity-height>188</entity-height>
+		<entity-X-Coordinate>338</entity-X-Coordinate>
+		<entity-Y-Coordinate>409</entity-Y-Coordinate>
+		<primary-collapsed>false</primary-collapsed>
+		<relation-collapsed>false</relation-collapsed>
+		<basic-collapsed>false</basic-collapsed>
+	</entity>
+
+	<entity>
+		<entity-name>com.skripsi.apsb.entity.TempBobot</entity-name>
+		<entity-width>120</entity-width>
+		<entity-height>150</entity-height>
+		<entity-X-Coordinate>81</entity-X-Coordinate>
+		<entity-Y-Coordinate>428</entity-Y-Coordinate>
+		<primary-collapsed>false</primary-collapsed>
+		<relation-collapsed>false</relation-collapsed>
+		<basic-collapsed>false</basic-collapsed>
+	</entity>
+
+	<entity>
+		<entity-name>com.skripsi.apsb.entity.Kendaraan</entity-name>
+		<entity-width>120</entity-width>
+		<entity-height>83</entity-height>
+		<entity-X-Coordinate>41</entity-X-Coordinate>
+		<entity-Y-Coordinate>96</entity-Y-Coordinate>
+		<primary-collapsed>false</primary-collapsed>
+		<relation-collapsed>false</relation-collapsed>
+		<basic-collapsed>true</basic-collapsed>
+	</entity>
+
+	<entity>
+		<entity-name>com.skripsi.apsb.entity.Spk</entity-name>
+		<entity-width>120</entity-width>
+		<entity-height>288</entity-height>
+		<entity-X-Coordinate>669</entity-X-Coordinate>
+		<entity-Y-Coordinate>204</entity-Y-Coordinate>
+		<primary-collapsed>false</primary-collapsed>
+		<relation-collapsed>false</relation-collapsed>
+		<basic-collapsed>false</basic-collapsed>
+	</entity>
+
+	<entity>
+		<entity-name>com.skripsi.apsb.entity.Role</entity-name>
+		<entity-width>120</entity-width>
+		<entity-height>103</entity-height>
+		<entity-X-Coordinate>461</entity-X-Coordinate>
+		<entity-Y-Coordinate>59</entity-Y-Coordinate>
+		<primary-collapsed>false</primary-collapsed>
+		<relation-collapsed>false</relation-collapsed>
+		<basic-collapsed>true</basic-collapsed>
+	</entity>
+
+	<entity>
+		<entity-name>com.skripsi.apsb.entity.base.BaseEntity</entity-name>
+		<entity-width>120</entity-width>
+		<entity-height>70</entity-height>
+		<entity-X-Coordinate>188</entity-X-Coordinate>
+		<entity-Y-Coordinate>-14</entity-Y-Coordinate>
+		<primary-collapsed>false</primary-collapsed>
+		<relation-collapsed>false</relation-collapsed>
+		<basic-collapsed>false</basic-collapsed>
+	</entity>
+</entities>
