@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security" xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/security
+           http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<global-method-security pre-post-annotations="enabled" />
+
+	<http use-expressions="true">
+		<intercept-url pattern="/master**" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/master/**" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/account/setting-admin.apsb" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/account/setting-admin/save.apsb" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/account**" access="hasRole('ROLE_USER')" />
+		<intercept-url pattern="/account/**" access="hasRole('ROLE_USER')" />
+		<intercept-url pattern="/help-admin.apsb" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/help-user.apsb" access="hasRole('ROLE_USER')" />
+		<form-login login-page="/login.apsb" authentication-failure-url="/loginfail.apsb" default-target-url="/" />
+		<logout logout-url="/logout.apsb" logout-success-url="/login.apsb" delete-cookies="JSESSIONID" />
+	</http>
+
+	<authentication-manager>
+		<authentication-provider>
+			<password-encoder hash="bcrypt" />
+			<jdbc-user-service data-source-ref="dataSource"
+				authorities-by-username-query="
+				SELECT USER.username, ROLE.name FROM USER
+				JOIN USER_ROLE ON USER.id = USER_ROLE.users_id 
+				JOIN ROLE ON USER_ROLE.roles_id = ROLE.id  				
+				WHERE USER.username = ?"
+
+				users-by-username-query="SELECT username, password, enabled FROM USER WHERE username = ?" />
+		</authentication-provider>
+	</authentication-manager>
+</beans:beans>
