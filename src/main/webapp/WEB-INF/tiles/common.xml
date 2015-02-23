@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="base" template="/WEB-INF/template/base.jsp">
+		<put-attribute name="footer" value="/WEB-INF/template/footer.jsp" />
+	</definition>
+
+	<definition name="home" extends="base">
+		<put-attribute name="title" value="Selamat Datang di APB" />
+		<put-attribute name="body" value="/WEB-INF/pages/home.jsp" />
+		<put-attribute name="current" value="home" />
+	</definition>
+
+	<definition name="users" extends="base">
+		<put-attribute name="title" value="Daftar Pengguna" />
+		<put-attribute name="body" value="/WEB-INF/pages/master/users.jsp" />
+		<put-attribute name="current" value="master" />
+	</definition>
+
+	<definition name="hitungrekomendasi" extends="base">
+		<put-attribute name="title" value="Hitung Rekomendasi Bagian 1" />
+		<put-attribute name="body" value="/WEB-INF/pages/master/hitungrekomendasi.jsp" />
+		<put-attribute name="current" value="hitung" />
+	</definition>
+
+	<definition name="hitungrekomendasi2" extends="base">
+		<put-attribute name="title" value="Hitung Rekomendasi Bagian 2" />
+		<put-attribute name="body" value="/WEB-INF/pages/master/hitungrekomendasi2.jsp" />
+		<put-attribute name="current" value="hitung" />
+	</definition>
+
+	<definition name="hitungrekomendasi3" extends="base">
+		<put-attribute name="title" value="Hitung Rekomendasi Bagian 3" />
+		<put-attribute name="body" value="/WEB-INF/pages/master/hitungrekomendasi3.jsp" />
+		<put-attribute name="current" value="hitung" />
+	</definition>
+	
+	<definition name="final" extends="base">
+		<put-attribute name="title" value="Hasil Akhir" />
+		<put-attribute name="body" value="/WEB-INF/pages/master/final.jsp" />
+		<put-attribute name="current" value="hitung" />
+	</definition>
+	
+	<definition name="hasil" extends="base">
+		<put-attribute name="title" value="Hasil Akhir" />
+		<put-attribute name="body" value="/WEB-INF/pages/hasil.jsp" />
+		<put-attribute name="current" value="news" />
+	</definition>
+
+	<definition name="kendaraan" extends="base">
+		<put-attribute name="title" value="Daftar Kendaraan" />
+		<put-attribute name="body" value="/WEB-INF/pages/master/kendaraan.jsp" />
+		<put-attribute name="current" value="master" />
+	</definition>
+
+	<definition name="kendaraanUpdate" extends="base">
+		<put-attribute name="title" value="Ubah Kendaraan" />
+		<put-attribute name="body" value="/WEB-INF/pages/master/edit/kendaraanUpdate.jsp" />
+		<put-attribute name="current" value="master" />
+	</definition>
+
+	<definition name="account" extends="base">
+		<put-attribute name="title" value="Profil Akun" />
+		<put-attribute name="body" value="/WEB-INF/pages/account.jsp" />
+		<put-attribute name="current" value="account" />
+	</definition>
+
+	<definition name="setting" extends="base">
+		<put-attribute name="title" value="Pengaturan Akun" />
+		<put-attribute name="body" value="/WEB-INF/pages/setting.jsp" />
+		<put-attribute name="current" value="account" />
+	</definition>
+
+	<definition name="setting-admin" extends="base">
+		<put-attribute name="title" value="Pengaturan Akun Administrator" />
+		<put-attribute name="body" value="/WEB-INF/pages/master/setting-admin.jsp" />
+		<put-attribute name="current" value="account" />
+	</definition>
+
+	<definition name="account-edit" extends="base">
+		<put-attribute name="title" value="Edit Akun" />
+		<put-attribute name="body" value="/WEB-INF/pages/accountedit.jsp" />
+		<put-attribute name="current" value="account" />
+	</definition>
+
+	<definition name="user-detail" extends="base">
+		<put-attribute name="title" value="Detail Pengguna" />
+		<put-attribute name="body" value="/WEB-INF/pages/master/user-detail.jsp" />
+		<put-attribute name="current" value="master" />
+	</definition>
+
+	<definition name="news-user" extends="base">
+		<put-attribute name="title" value="Berita Terkini" />
+		<put-attribute name="body" value="/WEB-INF/pages/news-user.jsp" />
+		<put-attribute name="current" value="news" />
+	</definition>
+	
+	<definition name="news-anonim" extends="base">
+		<put-attribute name="title" value="Berita Terkini" />
+		<put-attribute name="body" value="/WEB-INF/pages/news-anonim.jsp" />
+		<put-attribute name="current" value="news" />
+	</definition>
+	
+	<definition name="user-news-detail" extends="base">
+		<put-attribute name="title" value="Detail Berita" />
+		<put-attribute name="body" value="/WEB-INF/pages/user-news-detail.jsp" />
+		<put-attribute name="current" value="news" />
+	</definition>
+
+	<definition name="news-admin" extends="base">
+		<put-attribute name="title" value="Berita Admin" />
+		<put-attribute name="body" value="/WEB-INF/pages/master/news-admin.jsp" />
+		<put-attribute name="current" value="master" />
+	</definition>
+	
+	<definition name="news-hitung" extends="base">
+		<put-attribute name="title" value="Hitung" />
+		<put-attribute name="body" value="/WEB-INF/pages/master/hitung.jsp" />
+		<put-attribute name="current" value="hitung" />
+	</definition>
+
+	<definition name="news-detail" extends="base">
+		<put-attribute name="title" value="Detail Berita" />
+		<put-attribute name="body" value="/WEB-INF/pages/master/news-detail.jsp" />
+		<put-attribute name="current" value="hitung" />
+	</definition>
+
+	<definition name="news-update" extends="base">
+		<put-attribute name="title" value="Ubah Berita" />
+		<put-attribute name="body" value="/WEB-INF/pages/master/edit/news-update.jsp" />
+		<put-attribute name="current" value="master" />
+	</definition>
+
+	<definition name="help-user" extends="base">
+		<put-attribute name="title" value="Bantuan" />
+		<put-attribute name="body" value="/WEB-INF/pages/help-user.jsp" />
+		<put-attribute name="current" value="help" />
+	</definition>
+	
+	<definition name="help-admin" extends="base">
+		<put-attribute name="title" value="Bantuan Admin" />
+		<put-attribute name="body" value="/WEB-INF/pages/help-admin.jsp" />
+		<put-attribute name="current" value="help" />
+	</definition>
+	
+	<definition name="help-default" extends="base">
+		<put-attribute name="title" value="Bantuan" />
+		<put-attribute name="body" value="/WEB-INF/pages/help-default.jsp" />
+		<put-attribute name="current" value="help" />
+	</definition>
+
+	<definition name="register" extends="base">
+		<put-attribute name="title" value="Registrasi" />
+		<put-attribute name="body" value="/WEB-INF/pages/register.jsp" />
+		<put-attribute name="current" value="register" />
+	</definition>
+
+	<definition name="login" extends="base">
+		<put-attribute name="title" value="Dimohon untuk Login" />
+		<put-attribute name="body" value="/WEB-INF/pages/login.jsp" />
+		<put-attribute name="current" value="login" />
+	</definition>
+
+	<definition name="error" extends="base">
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body" value="/WEB-INF/pages/error/error.jsp" />
+		<put-attribute name="current" value="error" />
+	</definition>
+</tiles-definitions>

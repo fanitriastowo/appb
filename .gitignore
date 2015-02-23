@@ -1,6 +1,9 @@
 .class
 /target
-.setting
+.settings
 .classpath
 .project
 .springBeans
+*.mp4
+src/main/webapp/static/video/default
+src/main/webapp/static/video/user
