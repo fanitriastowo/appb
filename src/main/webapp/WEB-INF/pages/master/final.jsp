@@ -11,8 +11,8 @@
 					<tr>
 						<th>Nis</th>
 						<th>Nama</th>
-						<th>Raport1</th>
-						<th>Raport2</th>
+						<th>Ganjil</th>
+						<th>Genap</th>
 						<th>Jarak</th>
 						<th>Kendaraan</th>
 						<th>PenghasilanOrtu</th>
@@ -42,12 +42,17 @@
 			<div class="panel panel-default">
 				<div class="panel-body text-center">
 					<strong>*Ket Bobot :</strong> 
-					Rapot1 = <strong><c:out value="${bobot.bRapot1 }"/> </strong>; 
-					Rapot2 = <strong><c:out value="${bobot.bRapot2 }"/> </strong>; 
+					Ganjil = <strong><c:out value="${bobot.bRapot1 }"/> </strong>; 
+					Genap = <strong><c:out value="${bobot.bRapot2 }"/> </strong>; 
 					Jarak = <strong><c:out value="${bobot.bJarak }"/> </strong>; 
 					PenghasilanOrtu = <strong><c:out value="${bobot.bPenghasilanOrtu }"/> </strong>; 
 					Kendaraan = <strong><c:out value="${bobot.bKendaraan }"/> </strong>;
 					Jumlah = <strong><c:out value="${bobot.bRapot1 + bobot.bRapot2 + bobot.bJarak + bobot.bPenghasilanOrtu + bobot.bKendaraan } " /></strong>
+				</div>
+				<div class="panel-footer">
+					<strong>*Ket :</strong> 
+					Ganjil = Nilai Rata-rata Rapot Semester Ganjil
+					Genap = Nilai Rata-rata Rapot Semester Genap
 				</div>
 			</div>
 			<br/>

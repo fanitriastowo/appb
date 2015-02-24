@@ -11,8 +11,8 @@
 						<tr>
 							<th>Nis</th>
 							<th>Nama</th>
-							<th>Raport1</th>
-							<th>Raport2</th>
+							<th>Ganjil</th>
+							<th>Genap</th>
 							<th>Jarak</th>
 							<th>Kendaraan</th>
 							<th>PenghasilanOrtu</th>
@@ -46,8 +46,8 @@
 						<tr>
 							<th>Nis</th>
 							<th>Nama</th>
-							<th>Raport1</th>
-							<th>Raport2</th>
+							<th>Ganjil</th>
+							<th>Genap</th>
 							<th>Jarak</th>
 							<th>Kendaraan</th>
 							<th>PenghasilanOrtu</th>
@@ -85,6 +85,11 @@
 			<strong>*Normalisasi :</strong> Rapot1 = <strong>${normalisasi.raport1 }</strong>; Rapot2 = <strong>${normalisasi.raport2 }</strong>; Jarak = <strong>${normalisasi.jarak }</strong>; PenghasilanOrtu = <strong>${normalisasi.penghasilanOrtu }</strong>;
 			Kendaraan = <strong>${normalisasi.kendaraan }</strong>;
 		</div>
+		<div class="panel-footer">
+			<strong>*Ket :</strong> 
+			Ganjil = Nilai Rata-rata Rapot Semester Ganjil
+			Genap = Nilai Rata-rata Rapot Semester Genap
+		</div>
 	</div>
 </div>
 <div class="row">
@@ -102,3 +107,4 @@
 		$("#table2").dataTable({});
 	});
 </script>
+

@@ -9,8 +9,8 @@
 				<th>Nis</th>
 				<th>Nama</th>
 				<th>Email</th>
-				<th>Rapot1</th>
-				<th>Rapot2</th>
+				<th>Ganjil</th>
+				<th>Genap</th>
 				<th>Jarak</th>
 				<th>Kendaraan</th>
 				<th>PenghasilanOrtu</th>
@@ -41,8 +41,8 @@
 			<table class="table table-striped table-bordered table-condensed">
 				<thead>
 					<tr>
-						<th>Raport1</th>
-						<th>Raport2</th>
+						<th>Ganjil</th>
+						<th>Genap</th>
 						<th>Jarak</th>
 						<th>Kendaraan</th>
 						<th>PenghasilanOrtu</th>
@@ -80,13 +80,13 @@
 				<div class="modal-body">
 					<form:hidden path="id" />
 					<div class="form-group">
-						<label for="raport1" class="col-sm-6 control-label">Rapot 1:</label>
+						<label for="raport1" class="col-sm-6 control-label">Ganjil:</label>
 						<div class="col-sm-6">
 							<form:input path="bRapot1" cssClass="form-control slider"/>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="raport2" class="col-sm-6 control-label">Rapot 2:</label>
+						<label for="raport2" class="col-sm-6 control-label">Genap:</label>
 						<div class="col-sm-6">
 							<form:input path="bRapot2" cssClass="form-control slider"/>
 						</div>

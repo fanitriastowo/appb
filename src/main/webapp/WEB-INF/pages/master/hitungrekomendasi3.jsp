@@ -9,8 +9,8 @@
 				<tr>
 					<th>Nis</th>
 					<th>Nama</th>
-					<th>Raport1</th>
-					<th>Raport2</th>
+					<th>Ganjil</th>
+					<th>Genap</th>
 					<th>Jarak</th>
 					<th>Kendaraan</th>
 					<th>PenghasilanOrtu</th>
@@ -56,6 +56,11 @@
 			Jarak = <strong>${normalisasi.jarak }</strong>; 
 			PenghasilanOrtu = <strong>${normalisasi.penghasilanOrtu }</strong>; 
 			Kendaraan = <strong>${normalisasi.kendaraan }</strong>;
+		</div>
+		<div class="panel-footer">
+			<strong>*Ket :</strong> 
+			Ganjil = Nilai Rata-rata Rapot Semester Ganjil
+			Genap = Nilai Rata-rata Rapot Semester Genap
 		</div>
 	</div>
 </div>
