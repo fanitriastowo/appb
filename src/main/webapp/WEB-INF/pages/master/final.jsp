@@ -51,7 +51,7 @@
 				</div>
 				<div class="panel-footer">
 					<strong>*Ket :</strong> 
-					Ganjil = Nilai Rata-rata Rapot Semester Ganjil
+					Ganjil = Nilai Rata-rata Rapot Semester Ganjil;
 					Genap = Nilai Rata-rata Rapot Semester Genap
 				</div>
 			</div>
